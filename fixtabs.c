@@ -1,3 +1,9 @@
+//Description:
+//  Goes through a series of characters and replaces any tabs with double spaces
+//Usage on Linux operating system:
+//  gcc fixtabs.c
+//  ./a.out < oldfile.txt > newfile.txt
+
 #include <stdio.h>
 
 int main(void) {
