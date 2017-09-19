@@ -21,6 +21,7 @@ int main(void) {
 				prevcharspace = 1;
 		}
 		else {
+			putchar(' ');
 			putchar(character);
 			prevcharspace = 0;
 		}
