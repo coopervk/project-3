@@ -8,17 +8,18 @@
 
 int main(void) {
 	char character;
-	bool prevcharspace=1;
+	short unsigned int prevcharspace=1;
 	while(character=getchar()) {
 		if(character==EOF)
 			break;
-		else if(character=' ')
+		if(character==' ') {
 			if(prevcharspace) {
 				putchar('\t');
 				prevcharspace = 0;
 			}
 			else
 				prevcharspace = 1;
+		}
 		else {
 			putchar(character);
 			prevcharspace = 0;
