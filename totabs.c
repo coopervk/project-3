@@ -21,9 +21,11 @@ int main(void) {
 				prevcharspace = 1;
 		}
 		else {
-			putchar(' ');
+			if(prevcharspace) {
+				putchar(' ');
+				prevcharspace = 0;
+			}
 			putchar(character);
-			prevcharspace = 0;
 		}
 	}
 
