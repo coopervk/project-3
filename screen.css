@@ -13,6 +13,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.25em;/* 20/16 = 1.25 */
   line-height: 1.25em;/* 20/16 = 1.25 */
+  background-color: #1C1C1C;
+  color: #E3E3E3;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 body {
