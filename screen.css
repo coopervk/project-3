@@ -73,19 +73,21 @@ p {
 
 a {
   text-decoration: none;
-/*  color: ; */
-/*  border-bottom: ; */
+  color: #3838C7;
+  border-bottom: 2px dotted;
 }
 
-.preview a {
-/*  color: ; */
+a:visited {
+	color: #70708F;
 }
 
 a:hover,
 a:active {
+	color: #E3E31C;
 }
 
-a:visited {
+.preview a {
+  color: #FFFFFF; 
 }
 
 figure {
