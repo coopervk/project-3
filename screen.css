@@ -67,6 +67,23 @@ p {
   line-height: 1em;/* 16/16 = 1*/
 }
 
+a {
+  text-decoration: none;
+/*  color: ; */
+/*  border-bottom: ; */
+}
+
+.preview a {
+/*  color: ; */
+}
+
+a:hover,
+a:active {
+}
+
+a:visited {
+}
+
 figure {
 }
 
