@@ -13,8 +13,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.25em;/* 20/16 = 1.25 */
   line-height: 1.875em;/* font-size * 1.5 = 1.875 */
-  background-color: #1C1C1C;
-  color: #E3E3E3;
+  background-color: #202020;
+  color: #F3F3F3;
   font-family: "Lucida Console", Monaco, monospace;
 }
 
@@ -33,7 +33,7 @@ h4,
 h5,
 h6 {
   font-weight: bolder;
-	color: #1CE31C;
+	color: #55FF55;
 }
 
 h1 {
@@ -73,21 +73,18 @@ p {
 
 a {
   text-decoration: none;
-  color: #3838C7;
+  color: #5555FF;
   border-bottom: 2px dotted;
-}
-
-a:visited {
-	color: #70708F;
 }
 
 a:hover,
 a:active {
-	color: #E3E31C;
+	color: #2020FF;
 }
 
-.preview a {
-  color: #FFFFFF; 
+ol,
+ul {
+	color: #FF5555;
 }
 
 figure {
