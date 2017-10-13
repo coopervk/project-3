@@ -67,6 +67,7 @@ h6 {
 }
 
 p {
+  font-family: "Arial Black", Gadget, sans-serif;
   font-size: 1em;/* 16/16 = 1*/
   line-height: 1em;/* 16/16 = 1*/
 }
@@ -84,7 +85,8 @@ a:active {
 
 ol,
 ul {
-	color: #FF5555;
+	color: #FFFFFF;
+	
 }
 
 /* Avoid over-padding nested lists - Credit to Karl Stolley */
