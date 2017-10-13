@@ -32,7 +32,7 @@ html {
 }
 
 #content {
-  margin-top: 7em;
+  margin-top: 6.314; /* 3.157 * 2 */
 }
 
 article,
@@ -44,10 +44,6 @@ h4,
 h5,
 h6 {
   margin-top: 1.5785em; /* 3.157 / 2  */
-}
-
-nav {
-  font-size: 1.777em;
 }
 
 h1,
@@ -178,10 +174,17 @@ figcaption {
 }
 
 #navigation a {
+/*
+Total: 3.157em
+Top: (3.157 - 1.777) / 2 = 0.69em
+Text: 1.777em
+Bottom: (3.157 - 1.777) / 2 = 0.69em
+*/
+  font-size: 1.777em;
   float: center;
   display: block;
   width: 100%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.69em;
+  padding-bottom: 0.69em;
   border: 0.3em solid #202020;
 }
