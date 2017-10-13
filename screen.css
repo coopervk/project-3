@@ -111,6 +111,10 @@ figure {
   text-align: center;
 }
 
+figure > img {
+  transform: rotate(-90deg);
+}
+
 figcaption {
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 0.75em;/* 12/16 = 0.75*/
