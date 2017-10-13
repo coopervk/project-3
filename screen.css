@@ -19,7 +19,8 @@ html {
 	margin-left: 1.5em;
 }
 
-body {
+#content {
+	margin-top: 4.5em;
 }
 
 nav {
@@ -119,4 +120,32 @@ figcaption {
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 0.75em;/* 12/16 = 0.75*/
   line-height: 1.125em;/* font-size * 1.5 = 1.125*/
+}
+
+#navigation {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#navigation ul {
+	margin-left: 0;
+}
+
+#navigation li {
+  list-style-type: none;
+  text-align: center;
+  float: left;
+  width: 33.333%;
+	background-color: #404040;
+}
+
+#navigation a {
+	float: center;
+  display: block;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: 1px solid;
 }
