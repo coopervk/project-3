@@ -87,6 +87,13 @@ ul {
 	color: #FF5555;
 }
 
+/* Avoid over-padding nested lists - Credit to Karl Stolley */
+li ol,
+li ul,
+li:last-child {
+  padding-bottom: 0;
+}
+
 figure {
 }
 
