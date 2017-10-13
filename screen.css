@@ -108,7 +108,11 @@ li:last-child {
 }
 
 figure {
+  text-align: center;
 }
 
 figcaption {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 0.75em;/* 12/16 = 0.75*/
+  line-height: 1.125em;/* font-size * 1.5 = 1.125*/
 }
