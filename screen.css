@@ -24,7 +24,7 @@ Table:
 
 html {
   font-size: 1em;
-  line-height: 4.209em;
+  line-height: 3.157em;
   background-color: #202020;
   color: #F3F3F3;
   font-family: "Lucida Console", Monaco, monospace;
@@ -43,7 +43,7 @@ h4,
 h4,
 h5,
 h6 {
-  margin-top: 1.05225em; /* 4.209 / 4  */
+  margin-top: 1.5785em; /* 3.157 / 2  */
 }
 
 nav {
