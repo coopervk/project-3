@@ -16,6 +16,7 @@ html {
   background-color: #202020;
   color: #F3F3F3;
   font-family: "Lucida Console", Monaco, monospace;
+	margin-left: 1.5em;
 }
 
 body {
@@ -88,6 +89,15 @@ ol,
 ul {
 	color: #FFFFFF;
   font-family: "Arial Black", Gadget, sans-serif;
+	margin-left: 3em;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: square;
 }
 
 /* Avoid over-padding nested lists - Credit to Karl Stolley */
