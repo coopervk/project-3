@@ -19,11 +19,11 @@ body {
   background-color: #202020;
   color: #F3F3F3;
   font-family: "Lucida Console", Monaco, monospace;
-	padding-left: 1em;
 }
 
 #content {
-	padding-top: 2em;
+  padding-top: 3em;
+  padding-left: 1em;
 }
 
 section {
@@ -79,9 +79,12 @@ h3 {
   padding-bottom: 0.4em; /* ~ 8px @ 20px/em */
 }
 
-h4,
-h5,
-h6 {
+h4 {
+  padding-top: 1em;
+}
+
+h3 + h4 {
+  padding-top: 0.5em;
 }
 
 p, ol, ul {
