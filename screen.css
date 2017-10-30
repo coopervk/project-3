@@ -150,8 +150,6 @@ figcaption {
 }
 
 #navigation li {
-	font-size: 1em;
-	line-height: 1.2em;
   list-style-type: none;
   text-align: center;
   float: left;
