@@ -23,7 +23,7 @@ body {
 }
 
 #content {
-  padding-top: 4em;
+  padding-top: 3em;
   padding-left: 1em;
 }
 
@@ -52,24 +52,47 @@ h6 {
 }
 
 h1 {
+  font-size: 3.157em; /* 63.147 / 20 */
+  line-height: 1.10852455382em; /* 70 / 63.147 */
+  padding-bottom: 0.15836065054em; /* 10 / 63.147 */
+  background-color: #FFFFFF;
 }
 
 h2 {
+  font-size: 2.369em; /* 47.372 / 20 */
+  line-height: 1.05547580849em; /* 50 / 47.372 */
+  padding-bottom: 0.21109516169em; /* 10 / 47.372 */
+  background-color: #FFFF00;
 }
 
 h3 {
+  font-size: 1.777em; /* 35.538 / 20 */
+  line-height: 1.12555574315em; /* 40 / 35.538 */
+  padding-bottom: 0.28138893578em; /* 10 / 35.538 */
+  background-color: #FF00FF;
 }
 
 h4 {
-  padding-top: 1em;
+  font-size: 1.333em; /* 26.660 / 20 */
+  line-height: 1.12528132033em; /* 30 / 26.660 */
+  padding-bottom: 0.37509377344em; /* 10 / 26.660 */
+  background-color: #00FFFF;
 }
 
 h3 + h4 {
   padding-top: 0.5em;
 }
 
-p, ol, ul {
+p, ol, ul, figure {
   font-family: "Arial Black", Gadget, sans-serif;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background-color: #FFFF80;
 }
 
 ol,
@@ -85,6 +108,7 @@ ul {
 
 li {
   padding-bottom: 1em;
+  background-color: #FF80FF;
 }
 
 a {
@@ -106,18 +130,22 @@ li:last-child {
 }
 
 figure {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
   text-align: center;
+  background-color: #FF80FF;
 }
 
 figure > img {
 	height: 20em;
   max-width: 100%;
+  background-color: #80FFFF;
+  padding-bottom: 0;
 }
 
 figcaption {
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 0.750em; /* 15.004 / 20 */
+  line-height: 0.99973340442em; /* 15 / 15.004 */
+  padding-bottom: 0.33324446814em; /* 5 / 15.004 */
+  background-color: #80FFFF;
 }
 
 #navigation {
