@@ -57,28 +57,24 @@ h1 {
   font-size: 3.157em; /* 63.147 / 20 */
   line-height: 1.10852455382em; /* 70 / 63.147 */
   padding-bottom: 0.15836065054em; /* 10 / 63.147 */
-  background-color: #FFFFFF;
 }
 
 h2 {
   font-size: 2.369em; /* 47.372 / 20 */
   line-height: 1.05547580849em; /* 50 / 47.372 */
   padding-bottom: 0.21109516169em; /* 10 / 47.372 */
-  background-color: #FFFF00;
 }
 
 h3 {
   font-size: 1.777em; /* 35.538 / 20 */
   line-height: 1.12555574315em; /* 40 / 35.538 */
   padding-bottom: 0.28138893578em; /* 10 / 35.538 */
-  background-color: #FF00FF;
 }
 
 h4 {
   font-size: 1.333em; /* 26.660 / 20 */
   line-height: 1.12528132033em; /* 30 / 26.660 */
   padding-bottom: 0.37509377344em; /* 10 / 26.660 */
-  background-color: #00FFFF;
 }
 
 h3 + h4 {
@@ -91,7 +87,6 @@ p, ol, ul, figure {
 
 p {
   font-size: 1em;
-  background-color: #FFFF80;
 }
 
 ol,
@@ -104,14 +99,12 @@ ul {
 }
 
 li {
-  background-color: #FF80FF;
 }
 
 p + h4,
 ul + h4,
 ol + h4 {
   padding-top: 0.75018754688em; /* 20 / 26.660 */
-  background-color: #808080;
 }
 
 a {
@@ -134,7 +127,6 @@ li:last-child {
 
 figure {
   text-align: center;
-  background-color: #FF80FF;
   padding-bottom: 1em;
 }
 
@@ -143,7 +135,6 @@ figure > img {
   margin-right: auto;
   display: block;
 	width: 50%;
-  background-color: #80FFFF;
   padding-bottom: 0;
 }
 
@@ -151,7 +142,6 @@ figcaption {
   font-size: 0.750em; /* 15.004 / 20 */
   line-height: 0.99973340442em; /* 15 / 15.004 */
   padding-bottom: 0.33324446814em; /* 5 / 15.004 */
-  background-color: #80FFFF;
 }
 
 #navigation {
