@@ -116,6 +116,7 @@ a {
 a:hover,
 a:active {
   color: #2020FF;
+  background-color: #404040;
 }
 
 /* Avoid over-padding nested lists - Credit to Karl Stolley */
