@@ -198,4 +198,8 @@ figcaption {
   #content {
     padding-top: 2em;
   }
+
+  figure > img {
+  	width: 30%;
+  }
 }
