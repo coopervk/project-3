@@ -177,6 +177,13 @@ figcaption {
 
 
 @media screen and (min-width: 700px) {
+  #navigation li {
+    line-height: 3em;
+  }
+
+  #content {
+    padding-top: 3em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
