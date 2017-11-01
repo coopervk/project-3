@@ -106,6 +106,13 @@ li {
   background-color: #FF80FF;
 }
 
+p + h4,
+ul + h4,
+ol + h4 {
+  padding-top: 0.75018754688em; /* 20 / 26.660 */
+  background-color: #808080;
+}
+
 a {
   text-decoration: none;
   color: #5555FF;
