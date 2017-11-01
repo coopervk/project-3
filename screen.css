@@ -140,7 +140,8 @@ figure > img {
 
 figcaption {
   font-size: 0.750em; /* 15.004 / 20 */
-  line-height: 0.99973340442em; /* 15 / 15.004 */
+  line-height: 1.33297787257em; /* 20 / 15.004 */
+  padding-top: 0.33324446814em; /* 5 / 15.004 */
   padding-bottom: 0.33324446814em; /* 5 / 15.004 */
 }
 
