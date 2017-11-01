@@ -174,3 +174,10 @@ figcaption {
   display: block;
   width: 100%;
 }
+
+
+@media screen and (min-width: 600) {
+}
+
+@media screen and (min-width: 900) {
+}
