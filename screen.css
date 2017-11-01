@@ -184,6 +184,10 @@ figcaption {
   #content {
     padding-top: 3em;
   }
+
+  figure > img {
+  	width: 40%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
