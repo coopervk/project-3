@@ -28,12 +28,12 @@ body {
   padding-right: 3%;
 }
 
-article {
+footer {
   padding-bottom: 1em;
 }
 
-footer {
-  padding-bottom: 1em;
+section {
+  padding-bottom: 2em;
 }
 
 h1,
@@ -109,7 +109,7 @@ ol {
 p + h2,
 li + h2,
 ol + h2, 
-li + h2{
+li + h2 {
   padding-top: 1.26657097019em; /* 60 / 47.372 */
   background-color: #00F;
 }
