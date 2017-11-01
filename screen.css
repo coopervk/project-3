@@ -176,7 +176,7 @@ figcaption {
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   #navigation li {
     line-height: 3em;
   }
@@ -190,5 +190,5 @@ figcaption {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
 }
