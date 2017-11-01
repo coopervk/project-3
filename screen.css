@@ -4,12 +4,13 @@
 */
 /* stylelint-disable */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body,.stylelint{line-height:inherit}ol,ul,.stylelint{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* Modular scale: 4:5 at 16px
-31.25px h1
-25px h2
-20px h3
-16px Base
-12px Subtext
+/* Modular scale: 3:4 at 20px
+63.147px 3.157em h1
+47.372px 2.369em h2
+35.538px 1.777em h3
+26.660px 1.333em h4, h5, h6
+20.000px 1.000em p, li
+15.004px 0.750em figcaption
 */
 /* stylelint-enable */
 
