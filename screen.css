@@ -102,10 +102,32 @@ ul {
   list-style-type: square;
 }
 
+ol {
+  list-style-type: decimal;
+}
+
+p + h2,
+li + h2,
+ol + h2, 
+li + h2{
+  padding-top: 1.26657097019em; /* 60 / 47.372 */
+  background-color: #00F;
+}
+
+p + h3,
+ul + h3,
+ol + h3,
+li + h3 {
+  padding-top: 1.12555574315em; /* 40 / 35.538 */
+  background-color: #0F0;
+}
+
 p + h4,
 ul + h4,
-ol + h4 {
+ol + h4,
+li + h4 {
   padding-top: 0.75018754688em; /* 20 / 26.660 */
+  background-color: #F00;
 }
 
 a {
