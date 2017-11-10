@@ -75,7 +75,8 @@ h3 {
   padding-bottom: 0.28138893578em; /* 10 / 35.538 */
 }
 
-h4 {
+h4,
+footer h2 {
   font-size: 1.333em; /* 26.660 / 20 */
   line-height: 1.12528132033em; /* 30 / 26.660 */
   padding-bottom: 0.37509377344em; /* 10 / 26.660 */
@@ -107,8 +108,8 @@ ol {
 }
 
 p + h2,
-ul + h2,
-ol + h2,
+li + h2,
+ol + h2, 
 li + h2 {
   padding-top: 0.84438064679em; /* 40 / 47.372 */
 }
@@ -195,6 +196,15 @@ figcaption {
   width: 100%;
 }
 
+footer li {
+  line-height: 2em;
+  list-style-type: none;
+  text-align: left;
+  float: left;
+  width: 100%;
+  padding-bottom: 0;
+}
+
 @media screen and (min-width: 600px) {
   #navigation li {
     line-height: 3em;
@@ -220,5 +230,54 @@ figcaption {
 
   figure > img {
     width: 30%;
+  }
+
+  footer ul {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  footer li {
+    line-height: 2em;
+    list-style-type: none;
+    text-align: center;
+    float: left;
+    width: 25%;
+    background-color: #282828;
+    padding-bottom: 0;
+  }
+
+  footer li strong {
+    display: block;
+  }
+
+  @supports (display: grid) {
+    #content {
+      display: grid;
+      grid-template-columns: 16.4% 16.4% 16.4% 16.4% 16.4%;
+      grid-template-rows: 5rem 1fr 20rem;
+      grid-gap: 3%;
+    }
+
+    header {
+      grid-column: 1/6;
+      grid-row: 1/2;
+    }
+
+    article {
+      grid-column: 1/4;
+      grid-row: 2/3;
+    }
+
+    aside {
+      grid-column: 4/6;
+      grid-row: 2/3;
+    }
+
+    footer {
+      grid-column: 1/6;
+      grid-row: 3/4;
   }
 }
