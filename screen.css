@@ -23,7 +23,7 @@ body {
 }
 
 #content {
-  padding-top: 4em;
+  padding-top: 3em;
   padding-left: 3%;
   padding-right: 3%;
 }
@@ -109,8 +109,8 @@ ol {
 
 p + h2,
 li + h2,
-ol + h2, 
-li + h2 {
+ol + h2,
+ul + h2 {
   padding-top: 0.84438064679em; /* 40 / 47.372 */
 }
 
@@ -138,6 +138,15 @@ a:hover,
 a:active {
   color: #2020FF;
   background-color: #404040;
+}
+
+footer + li {
+  line-height: 2em;
+  list-style-type: none;
+  text-align: left;
+  float: left;
+  width: 100%;
+  padding-bottom: 0;
 }
 
 /* Avoid over-padding nested lists - Credit to Karl Stolley */
@@ -196,22 +205,9 @@ figcaption {
   width: 100%;
 }
 
-footer li {
-  line-height: 2em;
-  list-style-type: none;
-  text-align: left;
-  float: left;
-  width: 100%;
-  padding-bottom: 0;
-}
-
 @media screen and (min-width: 600px) {
   #navigation li {
     line-height: 3em;
-  }
-
-  #content {
-    padding-top: 3em;
   }
 
   figure > img {
@@ -220,16 +216,8 @@ footer li {
 }
 
 @media screen and (min-width: 900px) {
-  #navigation li {
-    line-height: 2em;
-  }
-
-  #content {
-    padding-top: 2em;
-  }
-
   figure > img {
-    width: 30%;
+    width: 80%;
   }
 
   footer ul {
@@ -257,7 +245,7 @@ footer li {
     #content {
       display: grid;
       grid-template-columns: 16.4% 16.4% 16.4% 16.4% 16.4%;
-      grid-template-rows: 5rem 1fr 20rem;
+      grid-template-rows: 1rem 1fr 10rem;
       grid-gap: 3%;
     }
 
@@ -279,5 +267,6 @@ footer li {
     footer {
       grid-column: 1/6;
       grid-row: 3/4;
+    }
   }
 }
