@@ -58,6 +58,7 @@ h1 {
   font-size: 3.157em; /* 63.147 / 20 */
   line-height: 1.10852455382em; /* 70 / 63.147 */
   padding-bottom: 0.15836065054em; /* 10 / 63.147 */
+  padding-top: 0.31672130109em; /* 20 / 63.147 */ /*For the purpose of space between h1 and nav*/
 }
 
 h2 {
