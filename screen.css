@@ -299,7 +299,7 @@ figcaption {
   @supports (display: flex) {
     #projects section {
       background-color: #000;
-      width: 30vw;
-      margin: 0.1vw;
+      width: 27vw;
+      margin: 0.5vw;
     }
 }
