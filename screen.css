@@ -208,6 +208,10 @@ figcaption {
   width: 100%;
 }
 
+#projects strong {
+  color: #55FF55;
+}
+
 @supports (display: flex) { /* For projects page */
   #projects article {
     display: flex;
