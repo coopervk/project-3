@@ -101,6 +101,11 @@ ul {
   list-style-type: square;
 }
 
+#projects ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 ol {
   list-style-type: decimal;
 }
