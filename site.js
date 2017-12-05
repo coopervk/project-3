@@ -30,11 +30,12 @@ $.noConflict();
     if (newlink) {
       $.get(newlink, function( data ) {
         var commitMessage;
-        data = JSON.stringify(data[0]));
+        data = JSON.stringify(data[0]);
         var regex_getLastCommitMessage = /message":"([^]+)","tree"/;
         commitMessage = regex_getLastCommitMessage.exec(data);
+        commitMessage = commitMessage[1];
         console.log("\n\n" + commitMessage + "\n\n");
-/*        $a.next().find('.update').replace;/*
+/*        $a.next().find('.update').replace;*/
       });
     console.log("\n\n\n");
     }
