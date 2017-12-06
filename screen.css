@@ -278,7 +278,7 @@ figcaption {
     #content {
       display: grid;
       grid-template-columns: 16.4% 16.4% 16.4% 16.4% 16.4%;
-      grid-template-rows: 1rem 1fr 10rem;
+      grid-template-rows: 1rem 1fr 0.5rem;
       grid-gap: 3%;
     }
 
@@ -303,7 +303,7 @@ figcaption {
     }
 
     #projects #content {
-      display: flex;
+      display: contents;
     }
   }
 
