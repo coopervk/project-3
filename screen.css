@@ -303,7 +303,7 @@ figcaption {
     }
 
     #projects #content {
-      display: contents;
+      display: flex;
     }
   }
 
