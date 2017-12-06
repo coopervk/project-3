@@ -5,36 +5,36 @@ $.noConflict();
 // function
 (function($) {
 
-  function repoToAPI(oldlink) {
+  function repoToAPI(oldLink) {
     var username;
     var reponame;
     var temp;
     var regex_getLinkPieces = /github.com\/([^/]+)\/([^/]+)/;
-    var newlink = null;
-    if (typeof(oldlink) === "string" ) {
-      temp = regex_getLinkPieces.exec(oldlink);
+    var newLink = null;
+    if (typeof(oldLink) === "string" ) {
+      temp = regex_getLinkPieces.exec(oldLink);
       if (temp) {
         username = temp[1];
         reponame = temp[2];
-        newlink = "https://api.github.com/repos/" + username + "/" + reponame + "/commits";
+        newLink = "https://api.github.com/repos/" + username + "/" + reponame + "/commits";
       }
     }
-    return newlink;
+    return newLink;
   }
 
-  function userToAPI(oldlink) {
+  function userToAPI(oldLink) {
     var username;
     var temp;
     var regex_getLinkPieces = /github.com\/([^/]+)/;
-    var newlink = null;
-    if (typeof(oldlink) === "string" ) {
-      temp = regex_getLinkPieces.exec(oldlink);
+    var newLink = null;
+    if (typeof(oldLink) === "string" ) {
+      temp = regex_getLinkPieces.exec(oldLink);
       if (temp) {
         username = temp[1];
-        newlink = "https://api.github.com/users/" + username;
+        newLink = "https://api.github.com/users/" + username;
       }
     }
-    return newlink;
+    return newLink;
   }
 
   if ( $('#home').length ) {
@@ -63,7 +63,7 @@ $.noConflict();
   if ( $( "#projects" ).length ) {
     $( "a" ).each(function() {
       var oldLink = this.getAttribute( "href" );
-      var newLink = repoToAPI(oldlink);
+      var newLink = repoToAPI(oldLink);
       var linkTag = this;
       if (newLink) {
         $.get(newLink, function( data ) {
