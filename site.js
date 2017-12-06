@@ -27,17 +27,28 @@ $.noConflict();
   $( "a" ).each(function() {
     var oldlink = this.getAttribute( "href" );
     var newlink = normalToAPIGitLink(oldlink);
+    var linkTag = this;
+    console.log(linkTag.getAttribute( "href" ));
+    console.log($(linkTag).get()[0].getAttribute( "href" ));
+    console.log($(linkTag).get()[0].tagName);
     if (newlink) {
       $.get(newlink, function( data ) {
         var commitMessage;
+        var regex_getLastCommitMessage;
+        var updateTag;
         data = JSON.stringify(data[0]);
-        var regex_getLastCommitMessage = /message":"([^]+)","tree"/;
+        regex_getLastCommitMessage = /message":"([^]+)","tree"/;
         commitMessage = regex_getLastCommitMessage.exec(data);
         commitMessage = commitMessage[1];
-        console.log("\n\n" + commitMessage + "\n\n");
-/*        $a.next().find('.update').replace;*/
+
+        console.log("linkTag: " + $(linkTag).get()[0].tagName);
+        console.log("linkTag's parent: " + $(linkTag).parent().get()[0].tagName);
+        console.log("linkTag's parent's next: " + $(linkTag).parent().nextAll("li.update").get()[0].tagName);
+        updateTag = $(linkTag).parent().nextAll(".update").get()[0];
+        $(updateTag).replaceWith( '<li class="update"><strong>(NOTE: ALTERED BY JS)Latest Update:</strong> ' + commitMessage + '</li>' );
+        console.log("\n\n");
       });
-    console.log("\n\n\n");
+    console.log("\n\n");
     }
   });
 })(jQuery);
