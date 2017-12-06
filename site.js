@@ -24,26 +24,28 @@ $.noConflict();
   }
 
 
-  $( "a" ).each(function() {
-    var oldlink = this.getAttribute( "href" );
-    var newlink = normalToAPIGitLink(oldlink);
-    var linkTag = this;
-    if (newlink) {
-      $.get(newlink, function( data ) {
-        var commitMessage;
-        var regex_getLastCommitMessage;
-        var updateTag;
-        data = JSON.stringify(data[0]);
-        regex_getLastCommitMessage = /message":"([^]+)","tree"/;
-        commitMessage = regex_getLastCommitMessage.exec(data);
-        commitMessage = commitMessage[1];
-        updateTag = $(linkTag).parent().nextAll(".update").get()[0];
-        if (updateTag) {
-          $(updateTag).replaceWith( '<li class="update"><strong>Latest Update:</strong> ' + commitMessage + '</li>' );
-        }
-        console.log("\n\n");
-      });
-    console.log("\n\n");
-    }
-  });
+  if ( $( "#projects" ).length ) {
+    $( "a" ).each(function() {
+      var oldlink = this.getAttribute( "href" );
+      var newlink = normalToAPIGitLink(oldlink);
+      var linkTag = this;
+      if (newlink) {
+        $.get(newlink, function( data ) {
+          var commitMessage;
+          var regex_getLastCommitMessage;
+          var updateTag;
+          data = JSON.stringify(data[0]);
+          regex_getLastCommitMessage = /message":"([^]+)","tree"/;
+          commitMessage = regex_getLastCommitMessage.exec(data);
+          commitMessage = commitMessage[1];
+          updateTag = $(linkTag).parent().nextAll(".update").get()[0];
+          if (updateTag) {
+            $(updateTag).replaceWith( '<li class="update"><strong>Latest Update:</strong> ' + commitMessage + '</li>' );
+          }
+          console.log("\n\n");
+        });
+      console.log("\n\n");
+      }
+    });
+  }
 })(jQuery);
