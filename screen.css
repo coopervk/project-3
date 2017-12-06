@@ -250,7 +250,7 @@ figcaption {
       width: 34vw; /* All that matters is that it's more than 33.33, AKA can't fit 2 cards */
     }
 
-    #projects li {
+    #projects section > ul > li {
       list-style-type: none;
     }
   }
