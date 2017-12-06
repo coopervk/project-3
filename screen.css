@@ -210,6 +210,7 @@ figcaption {
 
 #projects strong {
   color: #55FF55;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 @supports (display: flex) { /* For projects page */
@@ -304,4 +305,9 @@ figcaption {
       display: contents;
     }
   }
+
+  @supports (display: flex) {
+    #projects section {
+      width: 34vw; /* All that matters is that it's more than 33.33, AKA can't fit 2 cards */
+    }
 }
