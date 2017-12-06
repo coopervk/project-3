@@ -214,6 +214,10 @@ figcaption {
 }
 
 @supports (display: flex) { /* For projects page */
+  #projects h2{
+    padding-top: 0.84438064679em; /* 40 / 47.372 */
+  }
+
   #projects article {
     display: flex;
     flex-direction: row;
