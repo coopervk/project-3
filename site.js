@@ -23,6 +23,9 @@ $.noConflict();
   return newlink;
   }
 
+  if ( $('#home').length ) {
+    console.log("Congrats, you're on the home page!");
+  }
 
   if ( $( "#projects" ).length ) {
     $( "a" ).each(function() {
