@@ -5,13 +5,12 @@ $.noConflict();
 // function
 (function($) {
 
-  function normalToAPIGitLink(oldlink) {
+  function repoToAPI(oldlink) {
     var username;
     var reponame;
     var temp;
     var regex_getLinkPieces = /github.com\/([^/]+)\/([^/]+)/;
     var newlink = null;
-
     if (typeof(oldlink) === "string" ) {
       temp = regex_getLinkPieces.exec(oldlink);
       if (temp) {
@@ -20,20 +19,54 @@ $.noConflict();
         newlink = "https://api.github.com/repos/" + username + "/" + reponame + "/commits";
       }
     }
-  return newlink;
+    return newlink;
+  }
+
+  function userToAPI(oldlink) {
+    var username;
+    var temp;
+    var regex_getLinkPieces = /github.com\/([^/]+)/;
+    var newlink = null;
+    if (typeof(oldlink) === "string" ) {
+      temp = regex_getLinkPieces.exec(oldlink);
+      if (temp) {
+        username = temp[1];
+        newlink = "https://api.github.com/users/" + username;
+      }
+    }
+    return newlink;
   }
 
   if ( $('#home').length ) {
     console.log("Congrats, you're on the home page!");
+    var oldLink = "https://github.com/coopervk";
+    var newLink = userToAPI(oldLink);
+    console.log(newLink);
+    if (newLink) {
+      $.get(newLink, function( data ) {
+        var imageLink;
+        var bio;
+        data = JSON.stringify(data);
+        console.log(data);
+        regex_getImageLink = /avatar_url\"\:\"([^]+)\"\,\"gravatar_id/;
+        regex_getBio = /bio\"\:\"([^]+)\",\"public_repos/;
+        imageLink = regex_getImageLink.exec(data);
+        imageLink = imageLink[1];
+        console.log(imageLink);
+        bio = regex_getBio.exec(data);
+        bio = bio[1];
+        console.log(bio);
+      });
+    }
   }
 
   if ( $( "#projects" ).length ) {
     $( "a" ).each(function() {
-      var oldlink = this.getAttribute( "href" );
-      var newlink = normalToAPIGitLink(oldlink);
+      var oldLink = this.getAttribute( "href" );
+      var newLink = repoToAPI(oldlink);
       var linkTag = this;
-      if (newlink) {
-        $.get(newlink, function( data ) {
+      if (newLink) {
+        $.get(newLink, function( data ) {
           var commitMessage;
           var regex_getLastCommitMessage;
           var updateTag;
