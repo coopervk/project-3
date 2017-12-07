@@ -13,8 +13,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 /* stylelint-enable */
 
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(/wip/fonts/Raleway-Regular.ttf) format('truetype');
+}
+
 body {
-  font-size: 0.875em;/* 14/16 */ /*Used to be: font-size: 1.25em;/* 20/16 */
+  font-size: 0.875em;/* 14/16 */
+  font-family: 'Raleway', sans-serif;
   line-height: 1em;
   color: #55FF55;
   background-color: #202020;
@@ -23,20 +31,11 @@ body {
   padding-right: 3%;
 }
 
-footer {
-  padding-bottom: 1em;
-}
-
-section {
-  padding-bottom: 3em;
-}
-
 h1 {
   font-size: 2.369em; /* 33.16 / 14 */
   line-height: 0.42219541616em; /* 14*1 / 33.16 */
   padding-bottom: 0.42219541616em; /* 14*1 / 33.16 */
   padding-top: 0.42219541616em; /* 14*1 / 33.16 */ /*For the purpose of space between h1 and nav*/
-  background-color: #FFF; /*DEBUG*/
 }
 
 h2 {
@@ -44,7 +43,6 @@ h2 {
   line-height: 0.56279144557em; /* 14*1 / 24.876 */
   padding-top: 0.56279144557em; /* 14*1 / 24.876 */
   padding-bottom: 0.56279144557em; /* 14*1 / 24.876 */
-  background-color: #FF0; /*DEBUG*/
 }
 
 h3, h4, h5, h6 {
@@ -52,7 +50,6 @@ h3, h4, h5, h6 {
   line-height: 0.75018754688em; /* 14*1 / 18.662 */
   padding-top: 0.75018754688em; /* 14*1 / 18.662 */
   padding-bottom: 0.75018754688em; /* 14*1 / 18.662 */
-  background-color: #200; /*DEBUG*/
 }
 
 #navigation {
