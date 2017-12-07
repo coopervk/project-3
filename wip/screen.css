@@ -72,6 +72,18 @@ a:hover {
   background-color: #CCC;
 }
 
+ul, ol {
+  padding-left: 1em;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
 #navigation {
   position: absolute;
   width: 100%;
@@ -109,6 +121,10 @@ main {
 
 footer, footer li {
   text-align: right;
+}
+
+footer ul {
+  list-style-type: none;
 }
 
 footer {
