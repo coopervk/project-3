@@ -4,13 +4,6 @@
 */
 /* stylelint-disable */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body,.stylelint{line-height:inherit}ol,ul,.stylelint{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* Modular scale: 3:4 at 14px
-33.160px 2.369em h1
-24.876px 1.777em h2
-18.662px 1.333em h3, h4, h5, h6
-14.000px 1.000em default
-10.503px 0.750em figcaption
-*/
 /* stylelint-enable */
 
 @font-face {
@@ -21,7 +14,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 body {
-  font-size: 0.875em;/* 14/16 */
+  font-size: 1em;/* 16/16 */
   font-family: 'Raleway', sans-serif;
   line-height: 1em;
   color: #55FF55;
@@ -32,24 +25,23 @@ body {
 }
 
 h1 {
-  font-size: 2.369em; /* 33.16 / 14 */
-  line-height: 0.42219541616em; /* 14*1 / 33.16 */
-  padding-bottom: 0.42219541616em; /* 14*1 / 33.16 */
-  padding-top: 0.42219541616em; /* 14*1 / 33.16 */ /*For the purpose of space between h1 and nav*/
+  font-size: 2em;
+  line-height: 1.5em;
 }
 
 h2 {
-  font-size: 1.777em; /* 24.876 / 14 */
-  line-height: 0.56279144557em; /* 14*1 / 24.876 */
-  padding-top: 0.56279144557em; /* 14*1 / 24.876 */
-  padding-bottom: 0.56279144557em; /* 14*1 / 24.876 */
+  font-size: 1.8em;
+  line-height: 1.5em;
 }
 
 h3, h4, h5, h6 {
-  font-size: 1.333em; /* 18.662 / 14 */
-  line-height: 0.75018754688em; /* 14*1 / 18.662 */
-  padding-top: 0.75018754688em; /* 14*1 / 18.662 */
-  padding-bottom: 0.75018754688em; /* 14*1 / 18.662 */
+  font-size: 1.6em;
+  line-height: 1.5em;
+}
+
+p, li {
+  font-size: 1.1em;
+  line-height: 1.5em;
 }
 
 #navigation {
