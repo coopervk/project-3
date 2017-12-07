@@ -4,6 +4,10 @@ $.noConflict();
 // Re-introduce dollar sign scoped to self-executing
 // function
 (function($) {
+  var oldLink;
+  var newLink;
+  var regex_getImageLink;
+  var regex_getBio;
 
   function repoToAPI(oldLink) {
     var username;
@@ -38,15 +42,15 @@ $.noConflict();
   }
 
   if ( $('#home').length ) {
-    var oldLink = "https://github.com/coopervk";
-    var newLink = userToAPI(oldLink);
+    oldLink = "https://github.com/coopervk";
+    newLink = userToAPI(oldLink);
     if (newLink) {
       $.get(newLink, function( data ) {
         var imageLink;
         var bio;
         data = JSON.stringify(data);
-        regex_getImageLink = /avatar_url\"\:\"([^]+)\"\,\"gravatar_id/;
-        regex_getBio = /bio\"\:\"([^]+)\",\"public_repos/;
+        regex_getImageLink = /avatar_url":"([^]+)","gravatar_id/;
+        regex_getBio = /bio":"([^]+)","public_repos/;
         imageLink = regex_getImageLink.exec(data);
         imageLink = imageLink[1];
         bio = regex_getBio.exec(data);
@@ -58,9 +62,10 @@ $.noConflict();
 
   if ( $( "#projects" ).length ) {
     $( "a" ).each(function() {
-      var oldLink = this.getAttribute( "href" );
-      var newLink = repoToAPI(oldLink);
-      var linkTag = this;
+      var linkTag;
+      oldLink = this.getAttribute( "href" );
+      newLink = repoToAPI(oldLink);
+      linkTag = this;
       if (newLink) {
         $.get(newLink, function( data ) {
           var commitMessage;
@@ -79,3 +84,4 @@ $.noConflict();
     });
   }
 })(jQuery);
+
