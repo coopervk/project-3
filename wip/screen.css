@@ -46,40 +46,6 @@ h2, h3, h4, h5, h6 {
   margin-top: 1em;
 }
 
-@media screen and (min-width: 900px) {
-  @supports (display: grid) {
-    #content {
-      display: grid;
-      grid-template-columns: 16.4% 16.4% 16.4% 16.4% 16.4%;
-      grid-template-rows: 1rem 1fr 0.5rem;
-      grid-gap: 3%;
-    }
-
-    header {
-      grid-column: 1/6;
-      grid-row: 1/2;
-    }
-
-    article {
-      grid-column: 1/4;
-      grid-row: 2/3;
-    }
-
-    aside {
-      grid-column: 4/6;
-      grid-row: 2/3;
-    }
-
-    footer {
-      grid-column: 1/6;
-      grid-row: 3/4;
-    }
-
-    #projects #content {
-      display: inline;
-    }
-}
-
 h1 {
   font-size: 2em;
   line-height: 1.5em;
@@ -105,31 +71,8 @@ p, li {
   left: 0;
 }
 
-@media screen and (min-width: 800px) {
-  @supports (display: grid) {
-    #content {
-      display: grid;
-      grid-template-columns: 1fr 800px 1fr;
-      grid-template-rows: 1rem 1fr 0.5rem;
-      grid-gap: 3%;
-    }
-
-    header {
-      grid-column: 1/4;
-      grid-row: 1/2;
-    }
-
-    article {
-      grid-column: 2/3;
-      grid-row: 2/3;
-    }
-
-    footer {
-      grid-column: 1/4;
-      grid-row: 3/4;
-    }
-
-    #projects #content {
-      display: inline;
-    }
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
