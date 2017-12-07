@@ -49,6 +49,8 @@ h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2em;
   line-height: 1.5em;
+  text-align: center;
+  color: #888;
 }
 
 h2 {
@@ -64,6 +66,7 @@ h3, h4, h5, h6 {
 p, li {
   font-size: 1em;
   line-height: 1.2em;
+  text-align: justify;
 }
 
 #navigation {
@@ -73,6 +76,14 @@ p, li {
 
 main {
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
   margin: 0 auto;
+}
+
+footer, footer li {
+  text-align: right;
+}
+
+footer {
+  margin-bottom: 0.5em;
 }
