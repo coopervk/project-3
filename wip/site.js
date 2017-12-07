@@ -37,24 +37,24 @@ $.noConflict();
     return newLink;
   }
 
-  if ( $('#home').length ) {
-    var oldLink = "https://github.com/coopervk";
-    var newLink = userToAPI(oldLink);
-    if (newLink) {
-      $.get(newLink, function( data ) {
-        var imageLink;
-        var bio;
-        data = JSON.stringify(data);
-        regex_getImageLink = /avatar_url\"\:\"([^]+)\"\,\"gravatar_id/;
-        regex_getBio = /bio\"\:\"([^]+)\",\"public_repos/;
-        imageLink = regex_getImageLink.exec(data);
-        imageLink = imageLink[1];
-        bio = regex_getBio.exec(data);
-        bio = bio[1];
-        $("aside").prepend( '<figure><img src=' + imageLink + ' alt="github profile picture" /><figcaption>(github bio) ' + bio + '</figure>' );
-      });
-    }
-  }
+  /*if ( $('#home').length ) {
+      var oldLink = "https://github.com/coopervk";
+      var newLink = userToAPI(oldLink);
+      if (newLink) {
+        $.get(newLink, function( data ) {
+          var imageLink;
+          var bio;
+          data = JSON.stringify(data);
+          regex_getImageLink = /avatar_url\"\:\"([^]+)\"\,\"gravatar_id/;
+          regex_getBio = /bio\"\:\"([^]+)\",\"public_repos/;
+          imageLink = regex_getImageLink.exec(data);
+          imageLink = imageLink[1];
+          bio = regex_getBio.exec(data);
+          bio = bio[1];
+          $("aside").prepend( '<figure><img src=' + imageLink + ' alt="github profile picture" /><figcaption>(github bio) ' + bio + '</figure>' );
+        });
+      }
+    }*/
 
   if ( $( "#projects" ).length ) {
     $( "a" ).each(function() {
