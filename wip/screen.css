@@ -7,21 +7,31 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
+  font-family: 'Montserrat';
   font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(/wip/fonts/Raleway-Regular.ttf) format('truetype');
+  src: local('Montserrat'), url(/wip/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratLight';
+  font-weight: 100;
+  src: local('Montserrat Light'), url(/wip/fonts/Montserrat-Light.ttf) format('truetype');
 }
 
 body {
   font-size: 1em;/* 16/16 */
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat';
+  font-weight: normal;
   line-height: 1em;
   color: #55FF55;
   background-color: #202020;
   padding-top: 3em;
   padding-left: 3%;
   padding-right: 3%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'MontserratLight';
 }
 
 h1 {
@@ -41,7 +51,7 @@ h3, h4, h5, h6 {
 
 p, li {
   font-size: 1em;
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
 
 #navigation {
