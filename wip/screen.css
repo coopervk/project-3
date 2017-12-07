@@ -4,22 +4,20 @@
 */
 /* stylelint-disable */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body,.stylelint{line-height:inherit}ol,ul,.stylelint{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* Modular scale: 3:4 at 20px
-63.147px 3.157em h1
-47.372px 2.369em h2
-35.538px 1.777em h3
-26.660px 1.333em h4, h5, h6
-20.000px 1.000em p, li
-15.004px 0.750em figcaption
+/* Modular scale: 3:4 at 14px
+33.160px 2.369em h1
+24.876px 1.777em h2
+18.662px 1.333em h3, h4, h5, h6
+14.000px 1.000em default
+10.503px 0.750em figcaption
 */
 /* stylelint-enable */
 
 body {
-  font-size: 1.25em;/* 20/16 */
-  line-height: 2em;
+  font-size: 0.875em;/* 14/16 */ /*Used to be: font-size: 1.25em;/* 20/16 */
+  line-height: 1em;
+  color: #55FF55;
   background-color: #202020;
-  color: #F3F3F3;
-  font-family: "Lucida Console", Monaco, monospace;
   padding-top: 3em;
   padding-left: 3%;
   padding-right: 3%;
@@ -33,279 +31,32 @@ section {
   padding-bottom: 3em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #55FF55;
-}
-
 h1 {
-  font-size: 3.157em; /* 63.147 / 20 */
-  line-height: 1.10852455382em; /* 70 / 63.147 */
-  padding-bottom: 0.15836065054em; /* 10 / 63.147 */
-  padding-top: 0.31672130109em; /* 20 / 63.147 */ /*For the purpose of space between h1 and nav*/
+  font-size: 2.369em; /* 33.16 / 14 */
+  line-height: 0.42219541616em; /* 14*1 / 33.16 */
+  padding-bottom: 0.42219541616em; /* 14*1 / 33.16 */
+  padding-top: 0.42219541616em; /* 14*1 / 33.16 */ /*For the purpose of space between h1 and nav*/
+  background-color: #FFF; /*DEBUG*/
 }
 
 h2 {
-  font-size: 2.369em; /* 47.372 / 20 */
-  line-height: 1.05547580849em; /* 50 / 47.372 */
-  padding-bottom: 0.21109516169em; /* 10 / 47.372 */
+  font-size: 1.777em; /* 24.876 / 14 */
+  line-height: 0.56279144557em; /* 14*1 / 24.876 */
+  padding-top: 0.56279144557em; /* 14*1 / 24.876 */
+  padding-bottom: 0.56279144557em; /* 14*1 / 24.876 */
+  background-color: #FF0; /*DEBUG*/
 }
 
-h3 {
-  font-size: 1.777em; /* 35.538 / 20 */
-  line-height: 1.12555574315em; /* 40 / 35.538 */
-  padding-bottom: 0.28138893578em; /* 10 / 35.538 */
-}
-
-h4,
-footer h2 {
-  font-size: 1.333em; /* 26.660 / 20 */
-  line-height: 1.12528132033em; /* 30 / 26.660 */
-  padding-bottom: 0.37509377344em; /* 10 / 26.660 */
-}
-
-h3 + h4 {
-  padding-top: 0.5em;
-}
-
-p, ol, ul, figure {
-  font-family: "Arial Black", Gadget, sans-serif;
-}
-
-p {
-  font-size: 1em;
-}
-
-ol,
-ul {
-  padding-left: 2em;
-}
-
-ul {
-  list-style-type: square;
-}
-
-#projects ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-p + h2,
-li + h2,
-ol + h2,
-ul + h2 {
-  padding-top: 0.84438064679em; /* 40 / 47.372 */
-}
-
-p + h3,
-ul + h3,
-ol + h3,
-li + h3 {
-  padding-top: 0.84416680736em; /* 30 / 35.538 */
-}
-
-p + h4,
-ul + h4,
-ol + h4,
-li + h4 {
-  padding-top: 0.75018754688em; /* 20 / 26.660 */
-}
-
-a {
-  text-decoration: none;
-  color: #5555FF;
-  font-family: "Lucida Console", Monaco, monospace;
-}
-
-a:hover,
-a:active {
-  color: #2020FF;
-  background-color: #404040;
-}
-
-footer + li {
-  line-height: 2em;
-  list-style-type: none;
-  text-align: left;
-  float: left;
-  width: 100%;
-  padding-bottom: 0;
-}
-
-/* Avoid over-padding nested lists - Credit to Karl Stolley */
-li ol,
-li ul,
-li:last-child {
-  padding-bottom: 0;
-}
-
-figure {
-  text-align: center;
-  padding-bottom: 1em;
-}
-
-figure > img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 50%;
-  padding-bottom: 0;
-}
-
-figcaption {
-  font-size: 0.75em; /* 15.004 / 20 */
-  line-height: 1.33297787257em; /* 20 / 15.004 */
-  padding-top: 0.33324446814em; /* 5 / 15.004 */
-  padding-bottom: 0.33324446814em; /* 5 / 15.004 */
+h3, h4, h5, h6 {
+  font-size: 1.333em; /* 18.662 / 14 */
+  line-height: 0.75018754688em; /* 14*1 / 18.662 */
+  padding-top: 0.75018754688em; /* 14*1 / 18.662 */
+  padding-bottom: 0.75018754688em; /* 14*1 / 18.662 */
+  background-color: #200; /*DEBUG*/
 }
 
 #navigation {
-  position: absolute;
-  width: 100%;
-  top: 0;
+  display: none;
   left: 0;
 }
 
-#navigation ul {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-}
-
-#navigation li {
-  line-height: 4em;
-  list-style-type: none;
-  text-align: center;
-  float: left;
-  width: 33.3333%;
-  background-color: #282828;
-  padding-bottom: 0;
-}
-
-#navigation a {
-  text-align: center;
-  display: block;
-  width: 100%;
-}
-
-#projects strong {
-  color: #55FF55;
-  font-family: "Lucida Console", Monaco, monospace;
-}
-
-@supports (display: flex) { /* For projects page */
-  #projects h2{
-    padding-top: 0.84438064679em; /* 40 / 47.372 */
-  }
-
-  #projects article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-
-  #projects section {
-    background-color: #333;
-    flex-grow: 1;
-    width: 51vw; /* All that matters is that it's more than 50, AKA can't fit 1 card */
-    margin: 1vw;
-    padding: 1vw;
-    border: 0;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  #navigation li {
-    line-height: 3em;
-  }
-
-  figure > img {
-    width: 40%;
-  }
-
-  @supports (display: flex) {
-    #projects section {
-      width: 34vw; /* All that matters is that it's more than 33.33, AKA can't fit 2 cards */
-    }
-
-    #projects section > ul > li {
-      list-style-type: none;
-    }
-  }
-}
-
-@media screen and (min-width: 900px) {
-  figure > img {
-    width: 80%;
-  }
-
-  footer ul {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    width: 100%;
-  }
-
-  footer li {
-    line-height: 2em;
-    list-style-type: none;
-    text-align: center;
-    float: left;
-    width: 33.333%;
-    background-color: #333;
-    padding-bottom: 0;
-  }
-
-  footer li strong {
-    display: block;
-  }
-
-  @supports (display: grid) {
-    #content {
-      display: grid;
-      grid-template-columns: 16.4% 16.4% 16.4% 16.4% 16.4%;
-      grid-template-rows: 1rem 1fr 0.5rem;
-      grid-gap: 3%;
-    }
-
-    header {
-      grid-column: 1/6;
-      grid-row: 1/2;
-    }
-
-    article {
-      grid-column: 1/4;
-      grid-row: 2/3;
-    }
-
-    aside {
-      grid-column: 4/6;
-      grid-row: 2/3;
-    }
-
-    footer {
-      grid-column: 1/6;
-      grid-row: 3/4;
-    }
-
-    #projects #content {
-      display: inline;
-    }
-  }
-
-  @supports (display: flex) {
-    #projects section {
-      width: 34vw; /* All that matters is that it's more than 33.33, AKA can't fit 2 cards */
-    }
-  }
-}
